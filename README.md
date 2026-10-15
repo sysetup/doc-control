@@ -20,7 +20,7 @@ Document control for host and workspace operations: Markdown index templates tha
 | Template | Purpose |
 | --- | --- |
 | [`.agents/doc-operations/INDEX.md`](.agents/doc-operations/INDEX.md) | Catalog of approved operational documents. |
-| [`.agents/doc-operations/pull-request/INDEX.md`](.agents/doc-operations/pull-request/INDEX.md) | Register of proposed documents awaiting review. |
+| [`.agents/doc-requests/INDEX.md`](.agents/doc-requests/INDEX.md) | Register of proposed documents awaiting review. |
 
 Both templates start empty. Add one row per document, with relative links, its intended installed path, applicability, responsibility, local edition, use boundary, and specification reference.
 
@@ -30,7 +30,7 @@ Copy `doc-operations/` into `<workspace>/.agents/` for project documentation or 
 
 ## Usage
 
-1. **Draft:** Request a document through `doc-set`. By default, it applies the matching `doc-specs` specification, saves the proposal under `pull-request/`, and updates that directory's index.
+1. **Draft:** Request a document through `doc-set`. By default, it applies the matching `doc-specs` specification, saves the proposal under `doc-requests/`, and updates that directory's index.
 2. **Publish:** Review and approve through your established process, place the document at its intended installed path, and register it in the approved index.
 3. **Consult:** Use `doc-get` to locate and apply approved documentation through the appropriate host or workspace index. Proposals remain outside operational guidance.
 

@@ -15,7 +15,7 @@ For substantial changes to the table schema, directory families, or workflow, op
 3. Write documentation in English using GitHub-flavored Markdown. Keep each prose paragraph on one physical line and use relative links for repository files.
 4. If changing the workflow, update the README with the affected behavior and any migration needed for existing catalogs.
 
-When describing populated catalogs, use one row per document and retain its intended installed path, applicability, responsibility, local edition, use boundary, and authoring specification. Resolve relative links from the containing index. Keep proposals under `pull-request/` separate from approved operational guidance; a proposal alone does not establish approval.
+When describing populated catalogs, use one row per document and retain its intended installed path, applicability, responsibility, local edition, use boundary, and authoring specification. Resolve relative links from the containing index. Keep proposals under `doc-requests/` separate from approved operational guidance; a proposal alone does not establish approval.
 
 ## Validate and submit
 
