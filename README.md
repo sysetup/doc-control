@@ -26,7 +26,7 @@ Both templates start empty. Add one row per document, with relative links, its i
 
 ## Setup
 
-Copy `doc-operations/` into `<workspace>/.agents/` for project documentation or `$HOME/.agents/` for shared host documentation. Supply `doc-specs/` separately alongside it, and make the `doc-set` and `doc-get` skills available to your agent. These companion resources provide authoring contracts and workflows.
+Copy both `doc-operations/` and `doc-requests/` from this repository's `.agents/` into the same `<workspace>/.agents/` for project documentation or `$HOME/.agents/` for shared host documentation. Supply `doc-specs/` separately alongside them, and make the `doc-set` and `doc-get` skills available to your agent. These companion resources provide authoring contracts and workflows.
 
 ## Usage
 
@@ -34,4 +34,6 @@ Copy `doc-operations/` into `<workspace>/.agents/` for project documentation or 
 2. **Publish:** Review and approve through your established process, place the document at its intended installed path, and register it in the approved index.
 3. **Consult:** Use `doc-get` to locate and apply approved documentation through the appropriate host or workspace index. Proposals remain outside operational guidance.
 
-Documents are grouped as needed under `00-governance/`, `01-processes/`, `02-plans/`, `03-specifications/`, `04-control/`, and `05-evidence/`. Review and publication remain the owning environment's responsibility.
+**Existing catalogs:** Migrate the previous layout by moving `<.agents>/doc-operations/pull-request/` to `<.agents>/doc-requests/`, where `<.agents>` is `<workspace>/.agents` or `$HOME/.agents`. Preserve catalog entries and update relative document, specification, and installed-path references to preserve their targets. If `doc-requests/` already exists, reconcile both proposal catalogs without overwriting either index.
+
+Documents are grouped as needed under `00-governance/`, `01-processes/`, `02-plans/`, `03-specifications/`, and `04-control/`. Review and publication remain the owning environment's responsibility.
