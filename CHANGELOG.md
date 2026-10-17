@@ -8,7 +8,7 @@ No tagged releases or versioning policy are established in this repository. The 
 
 ### Added
 
-- Empty Markdown index templates for approved operational documents and proposals, with matching fields for scope, ownership, edition, and authoring specification.
+- Empty Markdown index templates for approved operational documents and proposals, with matching fields for scope, ownership, and edition.
 - [Setup and usage guidance](README.md) for host and workspace catalogs, the draft–publish–consult workflow, and separately supplied `doc-specs`, `doc-set`, and `doc-get` resources.
 - [Contribution guide](CONTRIBUTING.md) covering focused changes, schema compatibility, Markdown validation, and protection of sensitive information in public contributions.
 - [MIT license](LICENSE).
@@ -17,6 +17,10 @@ No tagged releases or versioning policy are established in this repository. The 
 ### Changed
 
 - Moved the proposal catalog from `.agents/doc-operations/pull-request/` to `.agents/doc-requests/` (`8f01aede`), separating proposals from approved documentation. Existing installations must migrate their proposal catalog as described in [Usage](README.md#usage).
+
+### Removed
+
+- Removed the `Authoring contract, specification used` column from both index templates and its requirements from repository guidance.
 
 ### Fixed
 

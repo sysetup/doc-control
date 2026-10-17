@@ -13,7 +13,7 @@
 
 ## Overview
 
-Document control for host and workspace operations: Markdown index templates that distinguish approved documentation from proposals and track each document's scope, ownership, edition, and authoring specification.
+Document control for host and workspace operations: Markdown index templates that distinguish approved documentation from proposals and track each document's scope, ownership, and edition.
 
 ## Contents
 
@@ -22,7 +22,7 @@ Document control for host and workspace operations: Markdown index templates tha
 | [`.agents/doc-operations/INDEX.md`](.agents/doc-operations/INDEX.md) | Catalog of approved operational documents. |
 | [`.agents/doc-requests/INDEX.md`](.agents/doc-requests/INDEX.md) | Register of proposed documents awaiting review. |
 
-Both templates start empty. Add one row per document, with relative links, its intended installed path, applicability, responsibility, local edition, use boundary, and specification reference.
+Both templates start empty. Add one row per document, with relative links, its intended installed path, applicability, responsibility, local edition, and use boundary.
 
 ## Setup
 
@@ -34,6 +34,6 @@ Copy both `doc-operations/` and `doc-requests/` from this repository's `.agents/
 2. **Publish:** Review and approve through your established process, place the document at its intended installed path, and register it in the approved index.
 3. **Consult:** Use `doc-get` to locate and apply approved documentation through the appropriate host or workspace index. Proposals remain outside operational guidance.
 
-**Existing catalogs:** Migrate the previous layout by moving `<.agents>/doc-operations/pull-request/` to `<.agents>/doc-requests/`, where `<.agents>` is `<workspace>/.agents` or `$HOME/.agents`. Preserve catalog entries and update relative document, specification, and installed-path references to preserve their targets. If `doc-requests/` already exists, reconcile both proposal catalogs without overwriting either index.
+**Existing catalogs:** Migrate the previous layout by moving `<.agents>/doc-operations/pull-request/` to `<.agents>/doc-requests/`, where `<.agents>` is `<workspace>/.agents` or `$HOME/.agents`. Preserve catalog entries and update relative document and installed-path references to preserve their targets. If `doc-requests/` already exists, reconcile both proposal catalogs without overwriting either index.
 
 Documents are grouped as needed under `00-governance/`, `01-processes/`, `02-plans/`, `03-specifications/`, and `04-control/`. Review and publication remain the owning environment's responsibility.
